@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(254, 236, 218);
+}
+.header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(249, 217, 188);
+    border-bottom: 1px solid #fdd1a5;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-text {
+    font-size: 24px;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2; /* Высота строки для лучшего отображения */
+}
+
+
+.header .logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+.span-main {
+    font-family: 'Inter';
+    margin-right: 200px;
+    background-color: rgb(253, 226, 201);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    color: rgb(93,54,30);
+    font-size: 20px;
+}
+.header .menu a {
+    border-radius: 10px;
+    background-color: rgb(253, 226, 201);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Inter";
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(93,54,30);
+    font-size: 20px;
+}
+
+.header .menu a:hover {
+    text-decoration: underline;
+}
+
+.header .notification {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container {
+    margin-left: 37%;
+    background-color: rgb(251, 240, 229);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 600px;
+}
+
+.container h2 {
+    font-family: "Pacifico", serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-family: 'Inter', serif;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    height: 42px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(206, 185, 157);
+    font-size: 20px;
+    border-radius: 10px;
+}
+.main {
+    display: flex;
+    padding: 20px;
+}
+
+.form-group input[type="password"] {
+    letter-spacing: 1px;
+}
+
+.buttons {
+    display:flex ;
+    
+    
+}
+
+.buttons button {
+    
+    padding: 10px 15px;
+    border: none;
+    background-color: #7b491f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 500px;
+    font-family: 'Inter', serif;
+    font-size: 15px;
+}
+
+.buttons button:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link a {
+    font-family: 'Inter', serif;
+    color: #7b491f;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    
+    text-decoration: underline;
+}

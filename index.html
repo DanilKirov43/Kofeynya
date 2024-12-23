@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Pacifico&family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="2.png" type="image/png">
+
+    
+    <script src="script.js"></script>
+    <title>Главная страница</title>
+    
+</head>
+<body>
+    <div class="header">
+        
+            <div class="logo">
+                <img src="1.png" alt="Логотип">
+                <span class="logo-text">Кофейня<br>Пригород</span>
+            
+        </div>
+        
+        <div class="menu">
+            <span class="span-main">Главная</span>
+            <a href="status.html">Статус заказа</a>
+            <a href="about.html">Сведения об организации</a>
+            <a href="info.html">Информация</a>
+            <a href="login.html">Вход</a>
+            <span class="notification">🔔</span>
+        </div>
+    </div>
+
+    <div class="main">
+        
+        <div class="selected-product">
+            
+            <div class="text1">Просмотр выбранного товара </div>
+            <img src="product0.png" alt="Изображение по умолчанию" class="default-image">
+            <div class="selected-products-list"></div>
+            <div class="order-actions">
+                <button id="cancelOrder">Отмена заказа</button>
+                <button id="continueOrder">Продолжить</button>
+            </div>
+        </div>
+
+        <div class="product-list">
+            <div class="text2">Выбор товара</div>
+            <div class="product-card">
+                <img src="product1.png" alt="Товар 1">
+                <div class="text-container">
+                    <div>Французский круасан</div>
+                    <div class="check-text">Мега сочный, с тем самым незабываем вкусом Парижского шоколада, 
+                        только что испеченный в печи из свежайших культут полей Франции</div>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+                <div class="product-price">99 руб.</div>
+                <input class="check" type="checkbox">
+                
+            </div>
+            <div class="product-card">
+                <img src="product2.png" alt="Товар 2">
+                
+                <div>
+                    <div>Кофе Savuar</div>
+                    <div class="check-text">Наслаждение от малейшего глотка. Вкумнейший и незабываемый кофе, из зерен 
+                        пропитанных любовью и добротой, напиток придает силы и неотразимое чуство утонченности.
+                    </div>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+                <input class="check" type="checkbox">
+                <div class="product-price">79 руб.</div>
+            </div>
+            <div class="product-card">
+                <img src="product3.png" alt="Товар 3">
+                
+                <div>
+                    <div>Чезкейк Чикаго</div>
+                    <div class="check-text">Только нежность. Этот вкус, осязание, ты никогда не пучуствуешь ничего подобного.
+                        Секрет этого блюда прост - наша любовь и забота, силы вложенные в создание чизкейка делают его таким.
+                    </div>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+                <input class="check" type="checkbox">
+                <div class="product-price">199 руб.</div>
+            </div>
+            <div class="product-card">
+                <img src="product4.png" alt="Товар 4">
+                
+                <div>
+                    <div>Грузинский чай</div>
+                    <div class="check-text">Окунись в горную атмосферу Кавказа. Это не просто чай - это мощь и исскуство, это
+                        сгусток нечто прекрасного, это взрыв фантастики переплетенной с затмевающим вкусом.
+                    </div>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+                <input class="check" type="checkbox">
+                <div class="product-price">49 руб.</div>
+            </div>
+            <div class="product-card">
+                <img src="product5.png" alt="Товар 5">
+                
+                <div>
+                    <div>Хлеб Русский</div>
+                    <div class="check-text">С любовью для самой лучшей души. Тот самый, теплый. нежнейший, хлеб изготовленный,
+                        руками любимого человека, вложившего всю мощь любви и ласки, чтобы подарить тепло, и разделит это с тобой.
+                    </div>
+                </div>
+                <div class="quantity-controls">
+                    <button class="decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                </div>
+                <input class="check" type="checkbox">
+                <div class="product-price">29 руб.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const productCards = document.querySelectorAll('.product-card');
+        const selectedProductsList = document.querySelector('.selected-products-list');
+        const defaultImage = document.querySelector('.default-image');
+    
+        productCards.forEach((card, index) => {
+            const checkbox = card.querySelector('input[type="checkbox"]');
+            const increaseButton = card.querySelector('.increase');
+            const decreaseButton = card.querySelector('.decrease');
+            const quantityElement = card.querySelector('.quantity');
+            const productPrice = parseInt(card.querySelector('.product-price').textContent.replace(' руб.', ''), 10);
+    
+            let quantity = 1;
+    
+            // Увеличение количества товара
+            increaseButton.addEventListener('click', () => {
+                quantity++;
+                quantityElement.textContent = quantity;
+                updateSelectedProduct(index, quantity);
+            });
+    
+            // Уменьшение количества товара
+            decreaseButton.addEventListener('click', () => {
+                if (quantity > 1) {
+                    quantity--;
+                    quantityElement.textContent = quantity;
+                    updateSelectedProduct(index, quantity);
+                }
+            });
+    
+            // Обработка выбора товара
+            checkbox.addEventListener('change', () => {
+                const productName = card.querySelector('div div:first-child').textContent;
+                const productDescription = card.querySelector('div div:last-child').textContent;
+                const productImage = card.querySelector('img').src;
+    
+                if (checkbox.checked) {
+                    const selectedProductItem = document.createElement('div');
+                    selectedProductItem.classList.add('selected-product-item');
+                    selectedProductItem.innerHTML = `
+                        <img src="${productImage}" alt="${productName}" style="width: 300px; height: auto;">
+                        <div>
+                            <div>${productName}</div>
+                            <div><strong>Описание: </strong>${productDescription}</div>
+                            <div><strong>Количество: </strong><span class="selected-quantity">${quantity}</span></div>
+                            <div><strong>Цена: </strong><span class="selected-price">${productPrice * quantity} руб.</span></div>
+                        </div>
+                    `;
+                    selectedProductItem.dataset.index = index;
+                    selectedProductsList.appendChild(selectedProductItem);
+                    defaultImage.style.display = 'none';
+                } else {
+                    const existingItem = selectedProductsList.querySelector(`.selected-product-item[data-index="${index}"]`);
+                    if (existingItem) {
+                        selectedProductsList.removeChild(existingItem);
+                    }
+                    if (!selectedProductsList.querySelector('.selected-product-item')) {
+                        defaultImage.style.display = 'block';
+                    }
+                }
+                updateTotalPrice();
+                // Установка скролла для списка выбранных товаров
+                selectedProductsList.style.overflowY = selectedProductsList.children.length > 1 ? 'auto' : 'hidden';
+                
+            });
+            function updateTotalPrice() {
+    let totalPrice = 0;
+    const selectedProductItems = selectedProductsList.querySelectorAll('.selected-product-item');
+    selectedProductItems.forEach(item => {
+        const priceText = item.querySelector('.selected-price').textContent;
+        const price = parseInt(priceText.replace(' руб.', ''), 10);
+        totalPrice += price;
+    });
+    const continueOrderButton = document.getElementById('continueOrder');
+    continueOrderButton.textContent = `Продолжить ${totalPrice} руб.`;
+}
+
+
+
+            // Обновление выбранного товара
+            function updateSelectedProduct(index, quantity) {
+                const selectedProductItem = selectedProductsList.querySelector(`.selected-product-item[data-index="${index}"]`);
+                if (selectedProductItem) {
+                    const selectedQuantity = selectedProductItem.querySelector('.selected-quantity');
+                    selectedQuantity.textContent = quantity;
+    
+                    const selectedPrice = selectedProductItem.querySelector('.selected-price');
+                    selectedPrice.textContent = `${productPrice * quantity} руб.`;
+                    updateTotalPrice(); // Добавлено
+                }
+            }
+            
+        });
+    
+        // Обработка кнопки "Отменить заказ"
+        document.getElementById('cancelOrder').addEventListener('click', () => {
+            alert('Заказ отменён');
+            selectedProductsList.innerHTML = '';
+            productCards.forEach(card => {
+                const checkbox = card.querySelector('input[type="checkbox"]');
+                checkbox.checked = false;
+            });
+            defaultImage.style.display = 'block';
+            selectedProductsList.style.overflowY = 'hidden';
+            updateTotalPrice(); // Добавлено // Сброс скролла
+        });
+    
+        // Обработка кнопки "Продолжить заказ"
+        document.getElementById('continueOrder').addEventListener('click', () => {
+    if (selectedProductsList.children.length > 0) {
+        // Сохраняем выбранные товары в localStorage
+        const selectedProducts = [];
+        selectedProductsList.querySelectorAll('.selected-product-item').forEach(item => {
+            const productName = item.querySelector('div div:first-child').textContent;
+            const productDescription = item.querySelector('div div:nth-child(2)').textContent; // Описание товара
+            const quantity = item.querySelector('.selected-quantity').textContent;
+            const price = item.querySelector('.selected-price').textContent;
+            const imageUrl = item.querySelector('img').src; // URL изображения товара
+
+            selectedProducts.push({
+                productName,
+                productDescription,
+                quantity,
+                price,
+                imageUrl
+            });
+        });
+        localStorage.setItem('selectedProducts', JSON.stringify(selectedProducts));
+
+        // Переход на страницу "Статус заказа"
+        window.location.href = 'status.html';
+    } else {
+        alert('Нет выбранных товаров для продолжения заказа');
+    }
+});
+
+
+    </script>
+    
+</body>
+</html>

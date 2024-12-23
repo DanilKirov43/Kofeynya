@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(254, 236, 218);
+}
+
+.header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(249, 217, 188);
+    border-bottom: 1px solid #fdd1a5;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-text {
+    font-size: 24px;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2; /* Высота строки для лучшего отображения */
+}
+
+
+.header .logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+.span-main {
+    font-family: 'Inter';
+    margin-right: 200px;
+    background-color: rgb(253, 226, 201);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    color: rgb(93,54,30);
+    font-size: 20px;
+}
+.header .menu a {
+    border-radius: 10px;
+    background-color: rgb(253, 226, 201);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Inter";
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(93,54,30);
+    font-size: 20px;
+}
+
+.header .menu a:hover {
+    text-decoration: underline;
+}
+
+.header .notification {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    padding: 20px;
+}
+
+.selected-product {
+    flex: 0.8;
+    margin-right: 20px;
+}
+
+.selected-product img {
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+    border: 1px solid rgb(206, 185, 157);
+    margin-bottom: 10px;
+}
+
+.selected-products-list {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 10px;
+    max-height: 500px;
+    overflow-y: hidden;
+    border: 1px solid rgb(206, 185, 157);
+    padding: 10px;
+}
+
+.selected-product-item {
+    
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(251, 240, 229);
+}
+
+.order-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.order-actions button {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #7b491f;
+    color: white;
+    cursor: pointer;
+    width: 230px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.order-actions button:hover {
+    background-color: #010306;
+}
+
+.product-list {
+    background-color: antiquewhite;
+    flex: 1.2;
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid rgb(206, 185, 157);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.product-card {
+    position: relative;
+    align-items: flex-start; 
+    background-color:rgb(249, 230, 206);
+    display: flex;
+   
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(206, 185, 157);
+    border-radius: 5px;
+}
+
+.product-card img {
+    border-radius: 10px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.product-card input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.product-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card div:first-child {
+    font-size: 24px;
+    font-family: "Pacifico", serif;
+    font-weight: 500;
+    font-style: normal;
+
+    
+    margin-bottom: 5px;
+}
+
+.product-card:hover {
+    background-color:rgb(246, 224, 195);
+}
+
+.check {
+    left: 800px;
+    border-radius: 50px;
+    position: absolute; 
+    margin-top: 50px;
+    width: 24px; /* Размер квадрата */
+    height: 24px; /* Размер квадрата */
+     
+}
+.text-container {
+   
+    margin-left: 0px; /* Добавляем отступ между текстом и изображением */
+}
+
+.check-text {
+    max-width: 400px;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #4d4c4c;
+}
+.text1 {
+    margin-top: -7px;
+    color: rgb(93,54,30);
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 90px;
+    padding: 10px;
+    font-size: 20px;
+}
+.text2 {
+    color: rgb(93,54,30);
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 420px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.quantity-controls {
+    margin-left: 15px;
+    width: fit-content; 
+    display: flex;
+    flex-direction: row; /* Размещение элементов в строку */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    justify-content: center; /* Центрирование элементов по горизонтали */
+    margin-top: 10px;
+    gap: 10px; /* Зазор между элементами */
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Центрирование текста внутри кнопки */
+}
+
+.quantity-controls .quantity {
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-price {
+    font-family: "Pacifico", serif;
+    font-weight: 500;
+    margin-top: 30px;
+    position: relative;
+    font-size: 30px;
+    margin-left: 50px;
+}
+

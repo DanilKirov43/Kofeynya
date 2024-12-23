@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_status.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Pacifico&family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="2.png" type="image/png">
+    <script src="script.js"></script>
+    <title>Статус заказа</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="1.png" alt="Логотип">
+            <span class="logo-text">Кофейня<br>Пригород</span>
+        </div>
+        <div class="menu">
+            <span class="span-main">Статус заказа</span>
+            <a href="index.html">Главная</a>
+            <a href="about.html">Сведения об организации</a>
+            <a href="info.html">Информация</a>
+            <a href="login.html">Вход</a>
+            <span class="notification">🔔</span>
+        </div>
+    </div>
+
+    <div class="status-order">
+        <div class="order-details">
+            <p class="h1">Выбранные позиции</p>
+            <div class="selected-products-list"></div>
+        </div>
+    
+        <!-- Новый блок для информации о заказе -->
+        <div class="order-info-block">
+            <div class="order-info">
+                <div class="status">Статус заказа</div>
+                <div class="prep-time">⏱ Время готовки: <span id="prepTime">30 минут</span></div>
+                <div class="order-status">☑ Статус: <span id="orderStatus">Не готов</span></div>
+                <div class="order-number">Номер заказа: <span id="orderNumber">#001</span></div>
+                <button id="payOrder">Оплатить заказ</button>
+            </div>
+            <div class="image-gallery">
+                <img src="3.png" alt="Product 1" class="image-1">
+                <img src="4.png" alt="Product 2" class="image-2">
+                <img src="5.png" alt="Product 3" class="image-3">
+                <img src="6.png" alt="Product 4" class="image-4">
+            </div>
+        </div>
+        
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || [];
+    const selectedProductsList = document.querySelector('.selected-products-list');
+    
+    selectedProducts.forEach(product => {
+        const selectedProductItem = document.createElement('div');
+        selectedProductItem.classList.add('selected-product-item');
+        selectedProductItem.innerHTML = `
+            <img src="${product.imageUrl}" alt="${product.productName}" class="product-image" style="width: 300px; height: auto; border-radius: 10px"/>
+            <div class="product-info">
+                <div class="product-name"><strong>Название:</strong> ${product.productName}</div>
+                <div class="product-description"> ${product.productDescription}</div>
+                <div class="product-quantity"><strong>Количество:</strong> ${product.quantity}</div>
+                <div class="product-price"><strong>Цена:</strong> ${product.price}</div>
+            </div>
+        `;
+        selectedProductsList.appendChild(selectedProductItem);
+    });
+
+    // Установка информации о заказе
+    document.getElementById('prepTime').textContent = '30 минут'; // Время готовки
+    document.getElementById('orderStatus').textContent = 'Не готов'; // Статус
+    document.getElementById('orderNumber').textContent = '#001'; // Номер заказа
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style_info.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Pacifico&family=Pattaya&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="2.png" type="image/png">
+    <script src="script.js"></script> 
+    <title>Информация</title> 
+</head> 
+<body> 
+    <div class="header"> 
+        <div class="logo"> 
+            <img src="1.png" alt="Логотип"> 
+            <span class="logo-text">Кофейня<br>Пригород</span> 
+        </div> 
+        <div class="menu"> 
+            <span class="span-main">Информация</span> 
+            <a href="index.html">Главная</a> 
+            <a href="status.html">Статус заказа</a> 
+            <a href="about.html">Сведения об организации</a> 
+            <a href="login.html">Вход</a> 
+            <span class="notification">🔔</span> 
+        </div> 
+    </div> 
+
+    <div class="main"> 
+        <h1 class="page-title">Популярные пригородные направления</h1>
+        <div class="clock-1" id="clock" style="float: right; "></div>
+        <div class="blocks-container">
+            <div class="block">
+                <h2>Из Кирова</h2>
+                <p>Киров - Луза (16.17)</p>
+                <p>Киров - Глазов (2.38 6.43 14.50 17.30)</p>
+                <p>Киров - Котельнич (5.21 7.27 8.25 10.52 13.55 15.58 18.02 20.15)</p>
+                <p>Киров - Зуевка (2.38 6.43 14.40 17.30 18.19)</p>
+                <p>Киров - Стрижи (5.21 7.27 8.25 10.52 13.55 15.58 18.02 20.15)</p>
+            </div>
+            <div class="block">
+                <h2>В Киров</h2>
+                <p>Пинюг - Киров (2.29 13.46)</p>
+                <p>Шабалино - Киров (5.10 15.44 19.45)</p>
+                <p>Котельнич - Киров (5.18 6.33 7.56 11.06 16.08 17.12 19.11 21.00)</p>
+                <p>Глазов - Киров (9.12 13.43 18.10 20.31)</p>
+                <p>Яр - Киров (5.00 6.30 9.58 14.29 18.54)</p>
+            </div>
+        </div>
+    </div> 
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
+        }
+    
+        updateTime(); // Initial call to avoid delay
+        setInterval(updateTime, 1000); // Update time every second
+    </script>
+</body> 
+</html>

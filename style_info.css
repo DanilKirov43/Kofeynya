@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(254, 236, 218);
+}
+
+.header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(249, 217, 188);
+    border-bottom: 1px solid #fdd1a5;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-text {
+    font-size: 24px;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2; /* Высота строки для лучшего отображения */
+}
+
+
+.header .logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+.span-main {
+    font-family: 'Inter';
+    margin-right: 200px;
+    background-color: rgb(253, 226, 201);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    color: rgb(93,54,30);
+    font-size: 20px;
+}
+.header .menu a {
+    border-radius: 10px;
+    background-color: rgb(253, 226, 201);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Inter";
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(93,54,30);
+    font-size: 20px;
+}
+
+.header .menu a:hover {
+    text-decoration: underline;
+}
+
+.header .notification {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: center; /* Центрирование содержимого */
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 24px; /* Размер шрифта заголовка */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-align: center; /* Центрирование текста */
+}
+
+.blocks-container {
+    display: flex; /* Горизонтальное расположение блоков */
+    justify-content: space-between; /* Распределение блоков по краям */
+    width: 90%; /* Занимает всю ширину родителя */
+}
+
+.block {
+    width: 45%; /* Ширина каждого блока */
+    background-color: rgb(251, 240, 229);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Pacifico', cursive; /* Шрифт заголовка */
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Balsamiq Sans', cursive; /* Шрифт текста */
+}
+.clock-1 {
+    margin-top: -20px;
+    font-family: 'Pacifico', cursive; 
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
